@@ -28,12 +28,6 @@ class User(Base):
     updated = Column(DateTime, default=datetime.now())
     # otps = relationship("OTP", back_populates= "owner")
     permissions = relationship("UserPermission", back_populates="owner")
-    student = relationship("StudentDetails", back_populates="owner")
-    feehead = relationship("FeeHeadDetails", back_populates="owner")
-    classfeehead = relationship("ClassFeeHeadDetails", back_populates="owner")
-    feeSubmission = relationship("FeeSubmissionDetails", back_populates="owner")
-    course = relationship("CourseDetails", back_populates="owner")
-    certificate = relationship("UploadCertificateDetails", back_populates="owner")
   
 # Create DataTable for User Permission details
 class UserPermission(Base):
@@ -56,7 +50,6 @@ class OTP(Base):
     othersOTP = Column(String(500), default="")
     user_id = Column(Integer, ForeignKey("user.id"))
     # owner = relationship("User", back_populates= "otps")
-    
 
 # Create DataTable for password reset
 class password_reset(Base):
@@ -126,10 +119,10 @@ class CourseDetails(Base):
     updated = Column(DateTime, default=datetime.now())
     owner = relationship("User", back_populates="course")
     
-class UploadCertificateDetails(Base):
+class UploadCertificate(Base):
     id = Column(Integer, primary_key=True, index=True)
     studentNo = Column(String(500), default = None)
     certificate = Column(String(500), default = None)
     user_id = Column(Integer, ForeignKey("user.id"))
     updated = Column(DateTime, default=datetime.now())
-    owner = relationship("User", back_populates="certificate")
+    owner = relationship("User", back_populates="course")
