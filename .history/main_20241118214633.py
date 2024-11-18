@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request, HTTPException, status
 from fastapi.responses import JSONResponse
 from core.config import XpertsTax_config
 from core.session import engine
-from models import Base, User, ApiUsageCount
+from models import Base, User, #ApiUsageCount
 from sqlalchemy.orm import Session
 from core.session import get_cron_db
 from routers import registration, login
@@ -73,6 +73,7 @@ async def trakingMiddleware(request: Request, call_next):
         db.add(row) 
         db.flush()
         db.commit() 
+
    
 
 

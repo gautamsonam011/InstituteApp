@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request, HTTPException, status
 from fastapi.responses import JSONResponse
 from core.config import XpertsTax_config
 from core.session import engine
-from models import Base, User, ApiUsageCount
+from models import Base, User  #ApiUsageCount
 from sqlalchemy.orm import Session
 from core.session import get_cron_db
 from routers import registration, login
@@ -61,18 +61,19 @@ async def trakingMiddleware(request: Request, call_next):
         else:
             user_id = decoded_token.get('id')
         
-    api_usage = db.query(ApiUsageCount
-        ).filter(ApiUsageCount.user_id == user_id)
+    # api_usage = db.query(ApiUsageCount
+    #     ).filter(ApiUsageCount.user_id == user_id)
     
-    if not api_usage.first() and decoded_token:
-        association_data = {}
-        association_data.update(decoded_token.get('association'))
-        association_data.update({"user_id": decoded_token.get('id')})
+    # if not api_usage.first() and decoded_token:
+    #     association_data = {}
+    #     association_data.update(decoded_token.get('association'))
+    #     association_data.update({"user_id": decoded_token.get('id')})
 
-        row = ApiUsageCount(**association_data)
-        db.add(row) 
-        db.flush()
-        db.commit() 
+    #     row = ApiUsageCount(**association_data)
+    #     db.add(row) 
+    #     db.flush()
+    #     db.commit() 
+
    
 
 
