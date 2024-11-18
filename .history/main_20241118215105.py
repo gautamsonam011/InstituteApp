@@ -29,7 +29,7 @@ fu.validation_error_response_definition = {
 }
 
 # Creating database
-Base.metadata.create_all(bind=engine)
+# Base.metadata.create_all(bind=engine)
 
 # Creating app instance
 app = FastAPI(title=XpertsTax_config.PROJECT_NAME, version=XpertsTax_config.PROJECT_VERSION)
