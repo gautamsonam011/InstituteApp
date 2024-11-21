@@ -1,0 +1,41 @@
+2024-11-21 14:33:06,292 - bcrypt 'builtin' backend not enabled via $PASSLIB_BUILTIN_BCRYPT
+2024-11-21 14:36:10,100 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\gauta\OneDrive\Desktop\InstituteApp\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-11-21 14:36:10,111 - detected 'bcrypt' backend, version '<unknown>'
+2024-11-21 14:36:10,111 - 'bcrypt' backend lacks $2$ support, enabling workaround
+2024-11-21 14:39:47,559 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\gauta\OneDrive\Desktop\InstituteApp\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-11-21 14:39:47,559 - detected 'bcrypt' backend, version '<unknown>'
+2024-11-21 14:39:47,559 - 'bcrypt' backend lacks $2$ support, enabling workaround
+2024-11-21 14:57:50,493 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\gauta\OneDrive\Desktop\InstituteApp\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-11-21 14:57:50,493 - detected 'bcrypt' backend, version '<unknown>'
+2024-11-21 14:57:50,493 - 'bcrypt' backend lacks $2$ support, enabling workaround
+2024-11-21 15:01:17,044 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\gauta\OneDrive\Desktop\InstituteApp\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-11-21 15:01:17,044 - detected 'bcrypt' backend, version '<unknown>'
+2024-11-21 15:01:17,044 - 'bcrypt' backend lacks $2$ support, enabling workaround
+2024-11-21 15:03:14,198 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\gauta\OneDrive\Desktop\InstituteApp\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-11-21 15:03:14,198 - detected 'bcrypt' backend, version '<unknown>'
+2024-11-21 15:03:14,198 - 'bcrypt' backend lacks $2$ support, enabling workaround
