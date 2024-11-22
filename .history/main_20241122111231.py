@@ -73,6 +73,5 @@ app.include_router(courses.router)
 app.include_router(uploadCertificates.router)
 
 
-
 # Mounting assets file path
 app.mount("/files", StaticFiles(directory="files"), name="files")

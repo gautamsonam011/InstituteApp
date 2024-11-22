@@ -4,7 +4,7 @@ from core.session import get_db
 from utils.auth import get_current_user
 from models import *
 from typing import List
-from utils.uploadFile import uploadCertificatePdf
+from utils.uploadFile import uploadEwaybillPdf
 
 router = APIRouter(tags=["uploadCertificates"], prefix="/certificates")
 
@@ -22,7 +22,7 @@ async def create_certificates(
     # # Process the uploaded image if provided
     if certificate:
         # Save the image to a folder or perform any required processing
-        file_path = uploadCertificatePdf(certificate, "Certificates")
+        file_path = uploadEwaybillPdf(certificate, folder)
     else:
         file_path = None
  
@@ -60,7 +60,7 @@ async def certificates_update(
     # # Process the uploaded image if provided
     if certificate:
         # Save the image to a folder or perform any required processing
-        file_path = uploadCertificatePdf(certificate, "Certificates")
+        file_path = uploadEwaybillPdf(certificate)
     else:
         file_path = None
     
@@ -87,21 +87,20 @@ async def certificates_update(
     return {"message": "Certificate updated successfully"}
 
 
-@router.get("/certificate/{StudentNo}")
+@router.get("/certificate/{ID}")
 async def get_certificate(
-    StudentNo: str,
+    ID: int,
     db: Session = Depends(get_db),
-    # current_user: User = Depends(get_current_user)
-    ):
+    current_user: User = Depends(get_current_user)):
 
-    # if current_user.get("association").get("level") > 1:
-    #     raise HTTPException(status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
-    #                         detail="You are not allowed to change Review details"
-    #                         )
+    if current_user.get("association").get("level") > 1:
+        raise HTTPException(status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
+                            detail="You are not allowed to change Review details"
+                            )
     
     new_data = db.query(UploadCertificateDetails).filter(
-        UploadCertificateDetails.studentNo == StudentNo,
-        # UploadCertificateDetails.branchID == current_user.get("association").get("branchID")
+        UploadCertificateDetails.id == ID,
+        UploadCertificateDetails.branchID == current_user.get("association").get("branchID")
         ).first()
     
     return new_data

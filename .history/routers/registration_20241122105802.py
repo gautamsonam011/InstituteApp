@@ -56,12 +56,12 @@ def registration(
     })
    
 
-    user_permission = UserPermission(
-        user_id=userID
-    )
-    db.add(user_permission)
-    db.commit()
-    db.refresh(user_permission)
+    # user_permission = UserPermission(
+    #     user_id=userID
+    # )
+    # db.add(user_permission)
+    # db.commit()
+    # db.refresh(user_permission)
 
     sendRegistrationMail(request.email, request.mobile, background_tasks)
 

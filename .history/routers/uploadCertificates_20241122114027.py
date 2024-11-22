@@ -87,21 +87,20 @@ async def certificates_update(
     return {"message": "Certificate updated successfully"}
 
 
-@router.get("/certificate/{StudentNo}")
+@router.get("/certificate/{ID}")
 async def get_certificate(
     StudentNo: str,
     db: Session = Depends(get_db),
-    # current_user: User = Depends(get_current_user)
-    ):
+    current_user: User = Depends(get_current_user)):
 
-    # if current_user.get("association").get("level") > 1:
-    #     raise HTTPException(status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
-    #                         detail="You are not allowed to change Review details"
-    #                         )
+    if current_user.get("association").get("level") > 1:
+        raise HTTPException(status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
+                            detail="You are not allowed to change Review details"
+                            )
     
     new_data = db.query(UploadCertificateDetails).filter(
         UploadCertificateDetails.studentNo == StudentNo,
-        # UploadCertificateDetails.branchID == current_user.get("association").get("branchID")
+        UploadCertificateDetails.branchID == current_user.get("association").get("branchID")
         ).first()
     
     return new_data

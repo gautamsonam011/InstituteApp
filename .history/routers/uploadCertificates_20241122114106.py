@@ -87,7 +87,7 @@ async def certificates_update(
     return {"message": "Certificate updated successfully"}
 
 
-@router.get("/certificate/{StudentNo}")
+@router.get("/certificate/{ID}")
 async def get_certificate(
     StudentNo: str,
     db: Session = Depends(get_db),
