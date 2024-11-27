@@ -50,7 +50,7 @@ app.mount("/files", StaticFiles(directory="files"), name="files")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins = ["*"],
+    allow_orgins = ["*"],
     allow_credentials = True,
     allow_methods = ["*"],
     allow_headers = ["*"]

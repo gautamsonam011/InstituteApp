@@ -21,7 +21,7 @@ async def create_student(
     new_data = StudentDetails(
         studentNo = request.studentNo,
         admissionDate = request.admissionDate,
-        courseName = request.courseName,
+        course = request.course,
         firstName = request.firstName,
         lastName = request.lastName,
         gender = request.gender,

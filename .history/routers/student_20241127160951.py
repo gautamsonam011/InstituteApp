@@ -21,7 +21,7 @@ async def create_student(
     new_data = StudentDetails(
         studentNo = request.studentNo,
         admissionDate = request.admissionDate,
-        courseName = request.courseName,
+        course = request.course,
         firstName = request.firstName,
         lastName = request.lastName,
         gender = request.gender,
@@ -63,7 +63,7 @@ async def update_student(
     # Update the Student fields
     existing_student.studentNo = request.studentNo
     existing_student.admissionDate = request.admissionDate
-    existing_student.courseName = request.courseName
+    existing_student.course = request.course
     existing_student.firstName = request.firstName
     existing_student.lastName = request.lastName
     existing_student.date_of_birth = request.date_of_birth

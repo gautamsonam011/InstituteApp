@@ -5,7 +5,7 @@ from datetime import date
 class student_details(BaseModel):
     studentNo: str = None
     admissionDate : date = None
-    courseName: str = None
+    course: str = None
     firstName: str = None
     lastName: str = None
     gender: str = None
