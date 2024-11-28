@@ -22,7 +22,7 @@ async def create_certificates(
     # # Process the uploaded image if provided
     if certificate:
         # Save the image to a folder or perform any required processing
-        file_path = uploadCertificatePdf(certificate, "PDF")
+        file_path = uploadCertificatePdf(certificate)
     else:
         file_path = None
  
@@ -87,29 +87,24 @@ async def certificates_update(
     return {"message": "Certificate updated successfully"}
 
 
-from fastapi.responses import FileResponse
-import os
-
-@router.get("/certificates/{studentNo}")
-async def download_certificate(
-    studentNo: str, 
-    db: Session = Depends(get_db)
+@router.get("/certificate/{StudentNo}")
+async def get_certificate(
+    StudentNo: str,
+    db: Session = Depends(get_db),
+    # current_user: User = Depends(get_current_user)
     ):
-    
-    # Query the certificate record from the database
-    certificate = db.query(UploadCertificateDetails).filter(UploadCertificateDetails.studentNo == studentNo).first()
-    
-    if not certificate or not certificate.certificate:
-        raise HTTPException(status_code=404, detail="Certificate not found")
-    
-    certificate_path = certificate.certificate  # The file path of the certificate
 
-    if not os.path.exists(certificate_path):
-        raise HTTPException(status_code=404, detail="Certificate file not found")
-
-    # Return the file as a response
-    return FileResponse(certificate_path, media_type="application/pdf", filename=f"certificate_{studentNo}.pdf")
-
+    # if current_user.get("association").get("level") > 1:
+    #     raise HTTPException(status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
+    #                         detail="You are not allowed to change Review details"
+    #                         )
+    
+    new_data = db.query(UploadCertificateDetails).filter(
+        UploadCertificateDetails.studentNo == StudentNo,
+        # UploadCertificateDetails.branchID == current_user.get("association").get("branchID")
+        ).first()
+    
+    return new_data
 
 @router.get("/certificateAll")
 async def get_all_certificate(

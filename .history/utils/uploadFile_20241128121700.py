@@ -18,7 +18,7 @@ def uploadCertificatePdf(uploaded_file: UploadFile, folder: str) -> str:
     
  
     time_stamp = int(datetime.timestamp(datetime.now()))
-    file_name = f"cert_{time_stamp}.pdf"
+    file_name = f"{time_stamp}.pdf"
     
     # Define the destination path for the PDF file
     dest = pathlib.Path(f"files/{folder}/{file_name}")
