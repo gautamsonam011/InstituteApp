@@ -20,13 +20,6 @@ class project_config:
     POSTGRES_DB : str = os.getenv("POSTGRES_DB","tdd")
     DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/{POSTGRES_DB}"
 
-    # MYSQL_USER : str = os.getenv("POSTGRES_USER")
-    # MYSQL_PASSWORD = os.getenv("POSTGRES_PASSWORD")
-    # MYSQL_HOST : str = os.getenv("POSTGRES_SERVER","localhost")
-    # MYSQL_DB : str = os.getenv("POSTGRES_DB","tdd")
-    # DATABASE_URL = f"mysql+mysqldb://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}/{MYSQL_DB}"
-
-
     MAIL_USERNAME: str = os.getenv("MAILGUN_USERNAME")
     MAIL_PASSWORD = os.getenv("MAILGUN_PASSWORD")
     MAIL_FROM: str = os.getenv("MAILGUN_FROM")
