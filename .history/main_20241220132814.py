@@ -13,6 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 os.makedirs("files", exist_ok=True)
 logging.basicConfig(filename="salepdf.txt", format="%(asctime)s - %(message)s", level=logging.DEBUG)
 
+
 fu.validation_error_response_definition = {
     "title": "HTTPValidationError",
     "type": "object",
