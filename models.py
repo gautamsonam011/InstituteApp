@@ -26,7 +26,6 @@ class User(Base):
     verified = Column(Boolean(), default=False)
     created = Column(DateTime, default=datetime.now())
     updated = Column(DateTime, default=datetime.now())
-    # otps = relationship("OTP", back_populates= "owner")
     permissions = relationship("UserPermission", back_populates="owner")
     student = relationship("StudentDetails", back_populates="owner")
     feehead = relationship("FeeHeadDetails", back_populates="owner")
@@ -55,9 +54,7 @@ class OTP(Base):
     mobile_otp_created = Column(DateTime, default=datetime.now())
     othersOTP = Column(String(500), default="")
     user_id = Column(Integer, ForeignKey("user.id"))
-    # owner = relationship("User", back_populates= "otps")
-    
-
+ 
 # Create DataTable for password reset
 class password_reset(Base):
     id = Column(Integer, primary_key=True, index=True)
