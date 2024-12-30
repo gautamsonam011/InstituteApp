@@ -47,7 +47,7 @@ def sendQuote(name, email, mobile, message, background_tasks):
     pass
     # message = MessageSchema(
     #     subject="New Quote",
-    #     recipients = ["info@startupkhata.com"],
+    #     recipients = ["gautamsonam011@gmail.com"],
     #     body = f"You have new Quote.\n\n{message} \n\nCustomer Name: {name} \nEmail Address: {email}\nContact No.: {mobile}"
     # )
     # fm = FastMail(conf)
