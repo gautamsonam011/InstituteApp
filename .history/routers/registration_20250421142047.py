@@ -26,6 +26,8 @@ def registration(
             detail=f"User with the Email ID: {request.email} already exists"
         )
     
+    print(user_email_check)
+    
     user_mobile_check = db.query(User).filter(User.mobile == request.mobile)
     if user_mobile_check.first():
         raise HTTPException(
@@ -36,9 +38,8 @@ def registration(
     user = User(
         email=request.email.lower(),
         mobile=request.mobile,
-        status="Trial user",
         password=Hasher.get_password_hash(request.password),
-        # branchName="Head Office" 
+        branchName="Head Office" 
     )
 
     db.add(user)
@@ -54,12 +55,12 @@ def registration(
     })
    
 
-    # user_permission = UserPermission(
-    #     user_id=userID
-    # )
-    # db.add(user_permission)
-    # db.commit()
-    # db.refresh(user_permission)
+    user_permission = UserPermission(
+        user_id=userID
+    )
+    db.add(user_permission)
+    db.commit()
+    db.refresh(user_permission)
 
     sendRegistrationMail(request.email, request.mobile, background_tasks)
 

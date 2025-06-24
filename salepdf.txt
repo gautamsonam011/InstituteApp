@@ -2211,3 +2211,210 @@ Traceback (most recent call last):
 AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-01-09 13:38:07,960 - detected 'bcrypt' backend, version '<unknown>'
 2025-01-09 13:38:07,960 - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-04-21 14:02:35,476 - Calling on_part_begin with no data
+2025-04-21 14:02:35,476 - Calling on_header_field with data[42:61]
+2025-04-21 14:02:35,476 - Calling on_header_value with data[63:89]
+2025-04-21 14:02:35,478 - Calling on_header_end with no data
+2025-04-21 14:02:35,478 - Calling on_headers_finished with no data
+2025-04-21 14:02:35,478 - Calling on_part_data with data[93:118]
+2025-04-21 14:02:35,478 - Calling on_part_end with no data
+2025-04-21 14:02:35,479 - Calling on_part_begin with no data
+2025-04-21 14:02:35,481 - Calling on_header_field with data[162:181]
+2025-04-21 14:02:35,483 - Calling on_header_value with data[183:209]
+2025-04-21 14:02:35,483 - Calling on_header_end with no data
+2025-04-21 14:02:35,483 - Calling on_headers_finished with no data
+2025-04-21 14:02:35,483 - Calling on_part_data with data[213:215]
+2025-04-21 14:02:35,483 - Calling on_part_end with no data
+2025-04-21 14:02:35,483 - Calling on_end with no data
+2025-04-21 14:05:56,584 - Calling on_part_begin with no data
+2025-04-21 14:05:56,585 - Calling on_header_field with data[42:61]
+2025-04-21 14:05:56,585 - Calling on_header_value with data[63:89]
+2025-04-21 14:05:56,585 - Calling on_header_end with no data
+2025-04-21 14:05:56,587 - Calling on_headers_finished with no data
+2025-04-21 14:05:56,587 - Calling on_part_data with data[93:109]
+2025-04-21 14:05:56,587 - Calling on_part_end with no data
+2025-04-21 14:05:56,587 - Calling on_part_begin with no data
+2025-04-21 14:05:56,587 - Calling on_header_field with data[153:172]
+2025-04-21 14:05:56,589 - Calling on_header_value with data[174:200]
+2025-04-21 14:05:56,589 - Calling on_header_end with no data
+2025-04-21 14:05:56,589 - Calling on_headers_finished with no data
+2025-04-21 14:05:56,589 - Calling on_part_data with data[204:206]
+2025-04-21 14:05:56,589 - Calling on_part_end with no data
+2025-04-21 14:05:56,589 - Calling on_end with no data
+2025-04-21 14:05:56,940 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\gauta\OneDrive\Desktop\AllProjects\Institution\InstituteApp\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-04-21 14:05:57,016 - detected 'bcrypt' backend, version '<unknown>'
+2025-04-21 14:05:57,020 - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-04-21 14:09:41,985 - Calling on_part_begin with no data
+2025-04-21 14:09:41,985 - Calling on_header_field with data[42:61]
+2025-04-21 14:09:41,985 - Calling on_header_value with data[63:89]
+2025-04-21 14:09:41,985 - Calling on_header_end with no data
+2025-04-21 14:09:41,985 - Calling on_headers_finished with no data
+2025-04-21 14:09:41,985 - Calling on_part_data with data[93:119]
+2025-04-21 14:09:41,985 - Calling on_part_end with no data
+2025-04-21 14:09:41,985 - Calling on_part_begin with no data
+2025-04-21 14:09:41,989 - Calling on_header_field with data[163:182]
+2025-04-21 14:09:41,990 - Calling on_header_value with data[184:210]
+2025-04-21 14:09:41,991 - Calling on_header_end with no data
+2025-04-21 14:09:41,991 - Calling on_headers_finished with no data
+2025-04-21 14:09:41,991 - Calling on_part_data with data[214:216]
+2025-04-21 14:09:41,991 - Calling on_part_end with no data
+2025-04-21 14:09:41,991 - Calling on_end with no data
+2025-04-21 14:09:44,062 - Calling on_part_begin with no data
+2025-04-21 14:09:44,066 - Calling on_header_field with data[42:61]
+2025-04-21 14:09:44,066 - Calling on_header_value with data[63:89]
+2025-04-21 14:09:44,066 - Calling on_header_end with no data
+2025-04-21 14:09:44,066 - Calling on_headers_finished with no data
+2025-04-21 14:09:44,066 - Calling on_part_data with data[93:119]
+2025-04-21 14:09:44,066 - Calling on_part_end with no data
+2025-04-21 14:09:44,066 - Calling on_part_begin with no data
+2025-04-21 14:09:44,066 - Calling on_header_field with data[163:182]
+2025-04-21 14:09:44,066 - Calling on_header_value with data[184:210]
+2025-04-21 14:09:44,066 - Calling on_header_end with no data
+2025-04-21 14:09:44,066 - Calling on_headers_finished with no data
+2025-04-21 14:09:44,066 - Calling on_part_data with data[214:216]
+2025-04-21 14:09:44,066 - Calling on_part_end with no data
+2025-04-21 14:09:44,066 - Calling on_end with no data
+2025-04-21 14:13:30,472 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\gauta\OneDrive\Desktop\AllProjects\Institution\InstituteApp\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-04-21 14:13:30,477 - detected 'bcrypt' backend, version '<unknown>'
+2025-04-21 14:13:30,478 - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-04-21 14:17:08,612 - Calling on_part_begin with no data
+2025-04-21 14:17:08,612 - Calling on_header_field with data[42:61]
+2025-04-21 14:17:08,612 - Calling on_header_value with data[63:89]
+2025-04-21 14:17:08,613 - Calling on_header_end with no data
+2025-04-21 14:17:08,613 - Calling on_headers_finished with no data
+2025-04-21 14:17:08,615 - Calling on_part_data with data[93:119]
+2025-04-21 14:17:08,615 - Calling on_part_end with no data
+2025-04-21 14:17:08,615 - Calling on_part_begin with no data
+2025-04-21 14:17:08,617 - Calling on_header_field with data[163:182]
+2025-04-21 14:17:08,617 - Calling on_header_value with data[184:210]
+2025-04-21 14:17:08,617 - Calling on_header_end with no data
+2025-04-21 14:17:08,617 - Calling on_headers_finished with no data
+2025-04-21 14:17:08,617 - Calling on_part_data with data[214:216]
+2025-04-21 14:17:08,617 - Calling on_part_end with no data
+2025-04-21 14:17:08,617 - Calling on_end with no data
+2025-04-21 14:17:10,421 - Calling on_part_begin with no data
+2025-04-21 14:17:10,421 - Calling on_header_field with data[42:61]
+2025-04-21 14:17:10,421 - Calling on_header_value with data[63:89]
+2025-04-21 14:17:10,421 - Calling on_header_end with no data
+2025-04-21 14:17:10,421 - Calling on_headers_finished with no data
+2025-04-21 14:17:10,421 - Calling on_part_data with data[93:119]
+2025-04-21 14:17:10,421 - Calling on_part_end with no data
+2025-04-21 14:17:10,421 - Calling on_part_begin with no data
+2025-04-21 14:17:10,424 - Calling on_header_field with data[163:182]
+2025-04-21 14:17:10,424 - Calling on_header_value with data[184:210]
+2025-04-21 14:17:10,424 - Calling on_header_end with no data
+2025-04-21 14:17:10,424 - Calling on_headers_finished with no data
+2025-04-21 14:17:10,424 - Calling on_part_data with data[214:216]
+2025-04-21 14:17:10,424 - Calling on_part_end with no data
+2025-04-21 14:17:10,424 - Calling on_end with no data
+2025-04-21 14:17:54,149 - Calling on_part_begin with no data
+2025-04-21 14:17:54,151 - Calling on_header_field with data[42:61]
+2025-04-21 14:17:54,157 - Calling on_header_value with data[63:89]
+2025-04-21 14:17:54,159 - Calling on_header_end with no data
+2025-04-21 14:17:54,167 - Calling on_headers_finished with no data
+2025-04-21 14:17:54,171 - Calling on_part_data with data[93:119]
+2025-04-21 14:17:54,171 - Calling on_part_end with no data
+2025-04-21 14:17:54,173 - Calling on_part_begin with no data
+2025-04-21 14:17:54,173 - Calling on_header_field with data[163:182]
+2025-04-21 14:17:54,175 - Calling on_header_value with data[184:210]
+2025-04-21 14:17:54,175 - Calling on_header_end with no data
+2025-04-21 14:17:54,175 - Calling on_headers_finished with no data
+2025-04-21 14:17:54,182 - Calling on_part_data with data[214:216]
+2025-04-21 14:17:54,184 - Calling on_part_end with no data
+2025-04-21 14:17:54,190 - Calling on_end with no data
+2025-04-21 14:22:18,310 - Calling on_field_start with no data
+2025-04-21 14:22:18,310 - Calling on_field_name with data[0:10]
+2025-04-21 14:22:18,312 - Calling on_field_data with data[11:19]
+2025-04-21 14:22:18,312 - Calling on_field_end with no data
+2025-04-21 14:22:18,312 - Calling on_field_start with no data
+2025-04-21 14:22:18,315 - Calling on_field_name with data[20:28]
+2025-04-21 14:22:18,315 - Calling on_field_data with data[29:59]
+2025-04-21 14:22:18,315 - Calling on_field_end with no data
+2025-04-21 14:22:18,315 - Calling on_field_start with no data
+2025-04-21 14:22:18,315 - Calling on_field_name with data[60:68]
+2025-04-21 14:22:18,315 - Calling on_field_data with data[69:71]
+2025-04-21 14:22:18,315 - Calling on_field_end with no data
+2025-04-21 14:22:18,315 - Calling on_field_start with no data
+2025-04-21 14:22:18,317 - Calling on_field_name with data[72:77]
+2025-04-21 14:22:18,317 - Calling on_field_end with no data
+2025-04-21 14:22:18,317 - Calling on_field_start with no data
+2025-04-21 14:22:18,318 - Calling on_field_name with data[79:88]
+2025-04-21 14:22:18,318 - Calling on_field_data with data[89:95]
+2025-04-21 14:22:18,318 - Calling on_field_end with no data
+2025-04-21 14:22:18,318 - Calling on_field_start with no data
+2025-04-21 14:22:18,318 - Calling on_field_name with data[96:109]
+2025-04-21 14:22:18,318 - Calling on_field_data with data[110:116]
+2025-04-21 14:22:18,320 - Calling on_field_end with no data
+2025-04-21 14:22:18,320 - Calling on_end with no data
+2025-04-21 14:22:54,592 - Calling on_field_start with no data
+2025-04-21 14:22:54,592 - Calling on_field_name with data[0:10]
+2025-04-21 14:22:54,593 - Calling on_field_data with data[11:19]
+2025-04-21 14:22:54,593 - Calling on_field_end with no data
+2025-04-21 14:22:54,593 - Calling on_field_start with no data
+2025-04-21 14:22:54,593 - Calling on_field_name with data[20:28]
+2025-04-21 14:22:54,595 - Calling on_field_data with data[29:56]
+2025-04-21 14:22:54,596 - Calling on_field_end with no data
+2025-04-21 14:22:54,596 - Calling on_field_start with no data
+2025-04-21 14:22:54,596 - Calling on_field_name with data[57:65]
+2025-04-21 14:22:54,596 - Calling on_field_data with data[66:68]
+2025-04-21 14:22:54,596 - Calling on_field_end with no data
+2025-04-21 14:22:54,596 - Calling on_field_start with no data
+2025-04-21 14:22:54,596 - Calling on_field_name with data[69:74]
+2025-04-21 14:22:54,596 - Calling on_field_end with no data
+2025-04-21 14:22:54,596 - Calling on_field_start with no data
+2025-04-21 14:22:54,596 - Calling on_field_name with data[76:85]
+2025-04-21 14:22:54,598 - Calling on_field_data with data[86:92]
+2025-04-21 14:22:54,598 - Calling on_field_end with no data
+2025-04-21 14:22:54,598 - Calling on_field_start with no data
+2025-04-21 14:22:54,598 - Calling on_field_name with data[93:106]
+2025-04-21 14:22:54,598 - Calling on_field_data with data[107:113]
+2025-04-21 14:22:54,598 - Calling on_field_end with no data
+2025-04-21 14:22:54,598 - Calling on_end with no data
+2025-04-21 14:22:54,681 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\gauta\OneDrive\Desktop\AllProjects\Institution\InstituteApp\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-04-21 14:22:54,685 - detected 'bcrypt' backend, version '<unknown>'
+2025-04-21 14:22:54,685 - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-04-21 14:23:06,027 - Calling on_part_begin with no data
+2025-04-21 14:23:06,027 - Calling on_header_field with data[42:61]
+2025-04-21 14:23:06,029 - Calling on_header_value with data[63:89]
+2025-04-21 14:23:06,029 - Calling on_header_end with no data
+2025-04-21 14:23:06,029 - Calling on_headers_finished with no data
+2025-04-21 14:23:06,029 - Calling on_part_data with data[93:118]
+2025-04-21 14:23:06,029 - Calling on_part_end with no data
+2025-04-21 14:23:06,031 - Calling on_part_begin with no data
+2025-04-21 14:23:06,031 - Calling on_header_field with data[162:181]
+2025-04-21 14:23:06,031 - Calling on_header_value with data[183:209]
+2025-04-21 14:23:06,031 - Calling on_header_end with no data
+2025-04-21 14:23:06,031 - Calling on_headers_finished with no data
+2025-04-21 14:23:06,031 - Calling on_part_data with data[213:215]
+2025-04-21 14:23:06,031 - Calling on_part_end with no data
+2025-04-21 14:23:06,031 - Calling on_end with no data
+2025-04-21 14:23:35,506 - Calling on_part_begin with no data
+2025-04-21 14:23:35,508 - Calling on_header_field with data[42:61]
+2025-04-21 14:23:35,509 - Calling on_header_value with data[63:89]
+2025-04-21 14:23:35,509 - Calling on_header_end with no data
+2025-04-21 14:23:35,509 - Calling on_headers_finished with no data
+2025-04-21 14:23:35,509 - Calling on_part_data with data[93:118]
+2025-04-21 14:23:35,509 - Calling on_part_end with no data
+2025-04-21 14:23:35,509 - Calling on_part_begin with no data
+2025-04-21 14:23:35,511 - Calling on_header_field with data[162:181]
+2025-04-21 14:23:35,511 - Calling on_header_value with data[183:209]
+2025-04-21 14:23:35,513 - Calling on_header_end with no data
+2025-04-21 14:23:35,515 - Calling on_headers_finished with no data
+2025-04-21 14:23:35,515 - Calling on_part_data with data[213:215]
+2025-04-21 14:23:35,517 - Calling on_part_end with no data
+2025-04-21 14:23:35,517 - Calling on_end with no data
