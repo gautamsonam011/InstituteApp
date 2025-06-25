@@ -2211,3 +2211,27 @@ Traceback (most recent call last):
 AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-01-09 13:38:07,960 - detected 'bcrypt' backend, version '<unknown>'
 2025-01-09 13:38:07,960 - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-04-21 15:12:15,858 - bcrypt 'builtin' backend not enabled via $PASSLIB_BUILTIN_BCRYPT
+2025-04-21 15:12:53,049 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Kartik\Desktop\AllProjects\Institute\InstituteApp\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-04-21 15:12:53,051 - detected 'bcrypt' backend, version '<unknown>'
+2025-04-21 15:12:53,051 - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-04-21 15:13:45,971 - Calling on_part_begin with no data
+2025-04-21 15:13:45,971 - Calling on_header_field with data[42:61]
+2025-04-21 15:13:45,971 - Calling on_header_value with data[63:89]
+2025-04-21 15:13:45,972 - Calling on_header_end with no data
+2025-04-21 15:13:45,972 - Calling on_headers_finished with no data
+2025-04-21 15:13:45,972 - Calling on_part_data with data[93:122]
+2025-04-21 15:13:45,972 - Calling on_part_end with no data
+2025-04-21 15:13:45,972 - Calling on_part_begin with no data
+2025-04-21 15:13:45,972 - Calling on_header_field with data[166:185]
+2025-04-21 15:13:45,972 - Calling on_header_value with data[187:213]
+2025-04-21 15:13:45,973 - Calling on_header_end with no data
+2025-04-21 15:13:45,973 - Calling on_headers_finished with no data
+2025-04-21 15:13:45,973 - Calling on_part_data with data[217:219]
+2025-04-21 15:13:45,973 - Calling on_part_end with no data
+2025-04-21 15:13:45,973 - Calling on_end with no data
