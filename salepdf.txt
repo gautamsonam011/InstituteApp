@@ -3377,3 +3377,178 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-06-05 14:50:08,865 - Calling on_part_data with data[217:219]
 2025-06-05 14:50:08,865 - Calling on_part_end with no data
 2025-06-05 14:50:08,865 - Calling on_end with no data
+2025-06-25 13:25:13,027 - Calling on_part_begin with no data
+2025-06-25 13:25:13,028 - Calling on_header_field with data[42:61]
+2025-06-25 13:25:13,028 - Calling on_header_value with data[63:89]
+2025-06-25 13:25:13,028 - Calling on_header_end with no data
+2025-06-25 13:25:13,029 - Calling on_headers_finished with no data
+2025-06-25 13:25:13,029 - Calling on_part_data with data[93:122]
+2025-06-25 13:25:13,029 - Calling on_part_end with no data
+2025-06-25 13:25:13,029 - Calling on_part_begin with no data
+2025-06-25 13:25:13,029 - Calling on_header_field with data[166:185]
+2025-06-25 13:25:13,029 - Calling on_header_value with data[187:213]
+2025-06-25 13:25:13,029 - Calling on_header_end with no data
+2025-06-25 13:25:13,030 - Calling on_headers_finished with no data
+2025-06-25 13:25:13,030 - Calling on_part_data with data[217:219]
+2025-06-25 13:25:13,030 - Calling on_part_end with no data
+2025-06-25 13:25:13,030 - Calling on_end with no data
+2025-06-25 13:25:13,107 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Kartik\Desktop\AllProjects\New folder\InstituteApp\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-06-25 13:25:13,133 - detected 'bcrypt' backend, version '<unknown>'
+2025-06-25 13:25:13,134 - 'bcrypt' backend lacks $2$ support, enabling workaround
+2025-06-25 13:27:23,666 - Calling on_part_begin with no data
+2025-06-25 13:27:23,666 - Calling on_header_field with data[42:61]
+2025-06-25 13:27:23,666 - Calling on_header_value with data[63:126]
+2025-06-25 13:27:23,666 - Calling on_header_end with no data
+2025-06-25 13:27:23,666 - Calling on_header_field with data[128:140]
+2025-06-25 13:27:23,666 - Calling on_header_value with data[142:157]
+2025-06-25 13:27:23,666 - Calling on_header_end with no data
+2025-06-25 13:27:23,666 - Calling on_headers_finished with no data
+2025-06-25 13:27:23,666 - Calling on_part_data with data[161:16384]
+2025-06-25 13:27:23,668 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,669 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,673 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,677 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,681 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,685 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,686 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,687 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,688 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,689 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,690 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,692 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,693 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,695 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,696 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,697 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,698 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,699 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,699 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,699 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,700 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,700 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,700 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,701 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,701 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,702 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,702 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,702 - Calling on_part_data with data[0:32768]
+2025-06-25 13:27:23,702 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,703 - Calling on_part_data with data[0:32768]
+2025-06-25 13:27:23,703 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,704 - Calling on_part_data with data[0:32768]
+2025-06-25 13:27:23,704 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,704 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,705 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,705 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,705 - Calling on_part_data with data[0:16384]
+2025-06-25 13:27:23,706 - Calling on_part_data with data[0:11712]
+2025-06-25 13:27:23,706 - Calling on_part_end with no data
+2025-06-25 13:27:23,706 - Calling on_end with no data
+2025-06-25 13:32:46,534 - Calling on_part_begin with no data
+2025-06-25 13:32:46,535 - Calling on_header_field with data[42:61]
+2025-06-25 13:32:46,535 - Calling on_header_value with data[63:89]
+2025-06-25 13:32:46,535 - Calling on_header_end with no data
+2025-06-25 13:32:46,535 - Calling on_headers_finished with no data
+2025-06-25 13:32:46,536 - Calling on_part_data with data[93:122]
+2025-06-25 13:32:46,536 - Calling on_part_end with no data
+2025-06-25 13:32:46,536 - Calling on_part_begin with no data
+2025-06-25 13:32:46,536 - Calling on_header_field with data[166:185]
+2025-06-25 13:32:46,536 - Calling on_header_value with data[187:213]
+2025-06-25 13:32:46,536 - Calling on_header_end with no data
+2025-06-25 13:32:46,537 - Calling on_headers_finished with no data
+2025-06-25 13:32:46,537 - Calling on_part_data with data[217:219]
+2025-06-25 13:32:46,537 - Calling on_part_end with no data
+2025-06-25 13:32:46,537 - Calling on_end with no data
+2025-06-25 13:38:25,718 - Calling on_part_begin with no data
+2025-06-25 13:38:25,718 - Calling on_header_field with data[42:61]
+2025-06-25 13:38:25,718 - Calling on_header_value with data[63:89]
+2025-06-25 13:38:25,718 - Calling on_header_end with no data
+2025-06-25 13:38:25,718 - Calling on_headers_finished with no data
+2025-06-25 13:38:25,718 - Calling on_part_data with data[93:122]
+2025-06-25 13:38:25,718 - Calling on_part_end with no data
+2025-06-25 13:38:25,719 - Calling on_part_begin with no data
+2025-06-25 13:38:25,719 - Calling on_header_field with data[166:185]
+2025-06-25 13:38:25,719 - Calling on_header_value with data[187:213]
+2025-06-25 13:38:25,719 - Calling on_header_end with no data
+2025-06-25 13:38:25,719 - Calling on_headers_finished with no data
+2025-06-25 13:38:25,719 - Calling on_part_data with data[217:219]
+2025-06-25 13:38:25,719 - Calling on_part_end with no data
+2025-06-25 13:38:25,719 - Calling on_end with no data
+2025-06-25 13:42:07,425 - Calling on_part_begin with no data
+2025-06-25 13:42:07,425 - Calling on_header_field with data[42:61]
+2025-06-25 13:42:07,425 - Calling on_header_value with data[63:89]
+2025-06-25 13:42:07,425 - Calling on_header_end with no data
+2025-06-25 13:42:07,425 - Calling on_headers_finished with no data
+2025-06-25 13:42:07,425 - Calling on_part_data with data[93:122]
+2025-06-25 13:42:07,425 - Calling on_part_end with no data
+2025-06-25 13:42:07,425 - Calling on_part_begin with no data
+2025-06-25 13:42:07,426 - Calling on_header_field with data[166:185]
+2025-06-25 13:42:07,426 - Calling on_header_value with data[187:213]
+2025-06-25 13:42:07,426 - Calling on_header_end with no data
+2025-06-25 13:42:07,426 - Calling on_headers_finished with no data
+2025-06-25 13:42:07,426 - Calling on_part_data with data[217:219]
+2025-06-25 13:42:07,426 - Calling on_part_end with no data
+2025-06-25 13:42:07,426 - Calling on_end with no data
+2025-06-25 13:42:19,411 - Calling on_field_start with no data
+2025-06-25 13:42:19,411 - Calling on_field_name with data[0:10]
+2025-06-25 13:42:19,412 - Calling on_field_data with data[11:19]
+2025-06-25 13:42:19,412 - Calling on_field_end with no data
+2025-06-25 13:42:19,412 - Calling on_field_start with no data
+2025-06-25 13:42:19,412 - Calling on_field_name with data[20:28]
+2025-06-25 13:42:19,412 - Calling on_field_data with data[29:60]
+2025-06-25 13:42:19,412 - Calling on_field_end with no data
+2025-06-25 13:42:19,412 - Calling on_field_start with no data
+2025-06-25 13:42:19,412 - Calling on_field_name with data[61:69]
+2025-06-25 13:42:19,412 - Calling on_field_data with data[70:72]
+2025-06-25 13:42:19,413 - Calling on_field_end with no data
+2025-06-25 13:42:19,413 - Calling on_end with no data
+2025-06-25 13:45:19,345 - Calling on_part_begin with no data
+2025-06-25 13:45:19,345 - Calling on_header_field with data[42:61]
+2025-06-25 13:45:19,345 - Calling on_header_value with data[63:89]
+2025-06-25 13:45:19,345 - Calling on_header_end with no data
+2025-06-25 13:45:19,345 - Calling on_headers_finished with no data
+2025-06-25 13:45:19,345 - Calling on_part_data with data[93:122]
+2025-06-25 13:45:19,345 - Calling on_part_end with no data
+2025-06-25 13:45:19,345 - Calling on_part_begin with no data
+2025-06-25 13:45:19,345 - Calling on_header_field with data[166:185]
+2025-06-25 13:45:19,345 - Calling on_header_value with data[187:213]
+2025-06-25 13:45:19,346 - Calling on_header_end with no data
+2025-06-25 13:45:19,346 - Calling on_headers_finished with no data
+2025-06-25 13:45:19,346 - Calling on_part_data with data[217:219]
+2025-06-25 13:45:19,346 - Calling on_part_end with no data
+2025-06-25 13:45:19,346 - Calling on_end with no data
+2025-06-25 13:48:39,166 - Calling on_part_begin with no data
+2025-06-25 13:48:39,166 - Calling on_header_field with data[42:61]
+2025-06-25 13:48:39,166 - Calling on_header_value with data[63:89]
+2025-06-25 13:48:39,166 - Calling on_header_end with no data
+2025-06-25 13:48:39,166 - Calling on_headers_finished with no data
+2025-06-25 13:48:39,167 - Calling on_part_data with data[93:122]
+2025-06-25 13:48:39,167 - Calling on_part_end with no data
+2025-06-25 13:48:39,167 - Calling on_part_begin with no data
+2025-06-25 13:48:39,167 - Calling on_header_field with data[166:185]
+2025-06-25 13:48:39,167 - Calling on_header_value with data[187:213]
+2025-06-25 13:48:39,167 - Calling on_header_end with no data
+2025-06-25 13:48:39,167 - Calling on_headers_finished with no data
+2025-06-25 13:48:39,167 - Calling on_part_data with data[217:219]
+2025-06-25 13:48:39,167 - Calling on_part_end with no data
+2025-06-25 13:48:39,167 - Calling on_end with no data
+2025-06-25 13:56:16,220 - Calling on_part_begin with no data
+2025-06-25 13:56:16,221 - Calling on_header_field with data[42:61]
+2025-06-25 13:56:16,221 - Calling on_header_value with data[63:89]
+2025-06-25 13:56:16,221 - Calling on_header_end with no data
+2025-06-25 13:56:16,221 - Calling on_headers_finished with no data
+2025-06-25 13:56:16,221 - Calling on_part_data with data[93:122]
+2025-06-25 13:56:16,221 - Calling on_part_end with no data
+2025-06-25 13:56:16,222 - Calling on_part_begin with no data
+2025-06-25 13:56:16,222 - Calling on_header_field with data[166:185]
+2025-06-25 13:56:16,222 - Calling on_header_value with data[187:213]
+2025-06-25 13:56:16,222 - Calling on_header_end with no data
+2025-06-25 13:56:16,222 - Calling on_headers_finished with no data
+2025-06-25 13:56:16,223 - Calling on_part_data with data[217:219]
+2025-06-25 13:56:16,223 - Calling on_part_end with no data
+2025-06-25 13:56:16,223 - Calling on_end with no data
