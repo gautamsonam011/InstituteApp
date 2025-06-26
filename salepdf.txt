@@ -2635,3 +2635,26 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-06-24 16:15:09,674 - Calling on_part_data with data[0:15477]
 2025-06-24 16:15:09,674 - Calling on_part_end with no data
 2025-06-24 16:15:09,674 - Calling on_end with no data
+2025-06-26 19:45:26,337 - Calling on_part_begin with no data
+2025-06-26 19:45:26,337 - Calling on_header_field with data[42:61]
+2025-06-26 19:45:26,337 - Calling on_header_value with data[63:89]
+2025-06-26 19:45:26,337 - Calling on_header_end with no data
+2025-06-26 19:45:26,337 - Calling on_headers_finished with no data
+2025-06-26 19:45:26,337 - Calling on_part_data with data[93:118]
+2025-06-26 19:45:26,337 - Calling on_part_end with no data
+2025-06-26 19:45:26,337 - Calling on_part_begin with no data
+2025-06-26 19:45:26,337 - Calling on_header_field with data[162:181]
+2025-06-26 19:45:26,337 - Calling on_header_value with data[183:209]
+2025-06-26 19:45:26,337 - Calling on_header_end with no data
+2025-06-26 19:45:26,337 - Calling on_headers_finished with no data
+2025-06-26 19:45:26,337 - Calling on_part_data with data[213:215]
+2025-06-26 19:45:26,337 - Calling on_part_end with no data
+2025-06-26 19:45:26,337 - Calling on_end with no data
+2025-06-26 19:45:26,668 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\gauta\OneDrive\Desktop\AllProjects\Institution\InstituteApp\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-06-26 19:45:26,718 - detected 'bcrypt' backend, version '<unknown>'
+2025-06-26 19:45:26,721 - 'bcrypt' backend lacks $2$ support, enabling workaround
